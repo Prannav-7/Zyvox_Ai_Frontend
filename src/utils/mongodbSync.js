@@ -37,7 +37,9 @@ export async function saveUserToMongoDB(user) {
     console.log('✅ User saved to MongoDB:', data);
     return data;
   } catch (error) {
-    console.error('❌ Error saving user to MongoDB:', error);
+    console.error('⚠️ Error saving user to MongoDB:', error.message);
+    // Don't throw - silently fail so app continues to work
+    return null;
   }
 }
 
