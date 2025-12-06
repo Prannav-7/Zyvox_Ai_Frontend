@@ -2,13 +2,11 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "devCommand": "npm run dev",
-  "env": {
-    "VITE_CLERK_PUBLISHABLE_KEY": "@vite_clerk_publishable_key",
-    "VITE_API_URL": "@vite_api_url"
-  },
-  "buildEnv": {
-    "VITE_CLERK_PUBLISHABLE_KEY": "@vite_clerk_publishable_key",
-    "VITE_API_URL": "@vite_api_url"
+  "build": {
+    "env": {
+      "VITE_CLERK_PUBLISHABLE_KEY": "pk_test_bW92ZWQtbW9uaXRvci04My5jbGVyay5hY2NvdW50cy5kZXYk",
+      "VITE_API_URL": "https://zyvox-ai-backend.onrender.com/api"
+    }
   },
   "routes": [
     {
