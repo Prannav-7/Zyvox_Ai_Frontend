@@ -1,6 +1,6 @@
 // Utility to sync Clerk user data with MongoDB backend
 
-const API_URL = 'http://localhost:5000/api';
+import { API_URL } from '../config/apiConfig.js';
 
 /**
  * Save user data to MongoDB
